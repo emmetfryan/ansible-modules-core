@@ -727,7 +727,12 @@ class FreeBSDHostname(Hostname):
     distribution = None
     strategy_class = FreeBSDStrategy
 
-
+class NeonHostname(Hostname):
+    platform = 'Linux'
+    distribution = 'Neon'
+    strategy_class = DebianStrategy
+    
+    
 # ===========================================
 
 def main():
